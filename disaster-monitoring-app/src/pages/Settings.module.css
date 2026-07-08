@@ -1,0 +1,159 @@
+.container {
+  height: 100%;
+  overflow-y: auto;
+  background: var(--color-background);
+  padding-bottom: 32px;
+}
+
+.section {
+  padding: 24px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 8px 0;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0 0 20px 0;
+}
+
+.settingsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--color-surface);
+  border-radius: 12px;
+}
+
+.settingInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.settingIcon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.settingName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 4px 0;
+}
+
+.settingDescription {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.toggle {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: var(--color-border);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.toggle.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.toggleSwitch {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle.active .toggleSwitch {
+  transform: translateX(24px);
+}
+
+.infoBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  color: #3b82f6;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  padding: 16px;
+  background: var(--color-surface);
+  border: none;
+  border-radius: 12px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.link:hover {
+  background: var(--color-surface-hover);
+}
+
+.link:active {
+  transform: scale(0.98);
+}
+
+.link.danger {
+  color: #ef4444;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.footer p {
+  margin: 4px 0;
+}

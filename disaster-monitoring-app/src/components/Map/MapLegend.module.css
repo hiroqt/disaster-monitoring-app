@@ -1,0 +1,160 @@
+.container {
+  position: absolute;
+  bottom: 84px;
+  left: 16px;
+  z-index: 1000;
+  background: var(--color-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  min-width: 200px;
+  max-width: 280px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container.closed {
+  min-width: 140px;
+}
+
+.toggleButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  outline: none;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerIcon {
+  color: var(--color-primary);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.content {
+  padding: 0 16px 16px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.label {
+  flex: 1;
+  font-weight: 500;
+}
+
+.count {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.severityInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoTitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.severityLevels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.severityItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.severityDot {
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .container {
+    bottom: 96px; /* Above the floating nav bar */
+    left: 12px;
+    border-radius: 24px;
+  }
+
+  .toggleButton {
+    padding: 10px 14px;
+  }
+  
+  .title {
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 0 14px 14px;
+  }
+  
+  .items {
+    gap: 10px;
+  }
+  
+  .item {
+    font-size: 12px;
+  }
+}
