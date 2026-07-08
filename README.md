@@ -1,5 +1,7 @@
 # Disaster Monitoring System
 
+> PH Based Disaster Monitoring App
+
 A real-time disaster monitoring and alerting system for Trece Martires City, Cavite, Philippines. This application aggregates data from multiple sources (USGS earthquakes, GDACS disasters, weather alerts) to provide comprehensive hazard tracking and visualization.
 
 ## Features
@@ -53,7 +55,7 @@ disaster-monitoring/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/hiroqt/disaster-monitoring-app.git
    cd disaster-monitoring
    ```
 
